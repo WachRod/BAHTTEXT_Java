@@ -19,7 +19,7 @@ String[]parts;  // parts[0]-> beforeDecimal, parts[1]-> after decimal
 		char firstChar = strNum.charAt(0);
 		char lastChar = strNum.charAt(strNum.length()-1);
 		if (firstChar =='+' || firstChar=='-'|| firstChar=='฿') strNum = strNum.substring(1);
-		if(lastChar=='฿') strNum = strNum.substring(0,strNum.length()-2);
+		if(lastChar=='฿') strNum = strNum.substring(0,strNum.length()-1);
 	}else	return "ศูนย์บาทถ้วน";
 	if (isConvertible(strNum) ){
 		// round number to 2 decimal point using BigDecimal for precision and accuracy
